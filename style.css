@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  background-color: #051f20;
+
+  color: white;
+  
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h4 {
+  width: 100%;
+
+  text-align: center;
+}
+
+#tableContainer {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.row {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+
+  background-color: #0b2b26;
+
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  
+  transition-duration: 0.1s;
+}
+
+.row:hover {
+  transform: scale(1.01);
+  transition-duration: 0.3s;
+}
+
+h3 {
+  color: #daf1de;
+}
+
+h3, h4 {
+  margin: 0;
+}
+
+.name {
+  width: 100%;
+
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.item {
+  padding: 10px;
+  margin: 5px;
+
+  background-color: #163832;
+  
+  flex: 1 1 auto;
+}
+
+.image {
+  max-height: min(30vw, 200px);
+  margin: 5px;
+
+  flex-shrink: 1;
+  align-self: center;
+}
+
+
+ul {
+  padding-left: 10px;
+
+  list-style-type: none;
+}
+
+li::before {
+  content: '✓ ';
+  color: lime;
+}
+
+.last {
+  background-color: transparent;
+
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1 1 auto;
+  padding: 0;
+}
+
+.light {
+  margin-bottom: 10px;
+  padding: 10px;
+
+  background-color: #163832;
+
+  flex: 1 1 auto;
+
+}
+
+.link {
+  padding: 10px;
+
+  background-color: #163832;
+
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+#tools {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  width: auto;
+  margin-bottom: 10px;
+}
+
+#toolsTitle {
+  width: 100%; margin-right: 195px; text-align: right;
+}
+
+#filter {
+  border: solid #163832 1px;
+  padding: 0 1em 0 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  outline: none;
+  color: white;
+  margin-right: 20px;
+  margin-left: 5px;
+  border-radius: 5px;
+  background-color: #0b2b26;
+  cursor: pointer;
+}
+
+#order {
+  cursor: pointer;
+  margin-right: 25px;
+}
